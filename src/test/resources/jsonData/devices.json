@@ -1,0 +1,48 @@
+{
+  "chrome": {
+    "browserName": "chrome",
+    "chromeOptions": {
+      "args": [
+        "--start-maximized"
+      ],
+      "prefs": {
+        "profile.default_content_setting_values.cookies": 1,
+        "profile.block_third_party_cookies": false
+      }
+    }
+  },
+  "chromeHeadless": {
+    "browserName": "chrome",
+    "chromeOptions": {
+      "args": [
+        "--headless",
+        "--no-sandbox",
+        "--window-size=1920,1080"
+      ],
+      "prefs": {
+        "profile.default_content_setting_values.cookies": 1,
+        "profile.block_third_party_cookies": false
+      }
+    }
+  },
+  "firefox": {
+    "browserName": "firefox",
+    "firstMatch": [
+      {
+        "platformName": "macos"
+      },
+      {
+        "platformName": "linux"
+      },
+      {
+        "platformName": "windows"
+      },
+      {
+        "platformName": "windows_nt"
+      }
+    ]
+  },
+  "edge": {
+    "browserName": "MicrosoftEdge"
+  }
+}
